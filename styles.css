@@ -11,34 +11,219 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./Asstes/Calculator.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
 
 }
 
 .calculator {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    justify-self: center;
     align-items: center;
-    margin-top: 4em;
-    background-image: url(./Asstes/Calculator.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 455px;
+    margin-top: 2em;
+
     height: 800px;
     width: 600px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    opacity: 98%;
+    height: 100px;
+    width: 50%;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.3em;
+    text-shadow: 0px 0px 18px rgba(255, 255, 255, 0.9);
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b8b8b8;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    height: 400px;
-    width: 60%;
-    margin-top: 200px;
+    grid-column-gap: 0;
+    height: 410px;
+    width: 56%;
+    margin-top: 5px;
     margin-right: 10px;
 }
 
 .buttons-numbers-equal {
     grid-column: span 2
+}
+
+button {
+    background-color: #232223;
+    cursor: pointer;
+    border: none;
+
+}
+
+.down {
+    background-size: 78px;
+    background-position: center;
+
+}
+
+.down-equal {
+    background-size: 158px;
+    background-position: center;
+
+}
+
+/* Button-images */
+
+#ac {
+    background-image: url(./Asstes/keys/ac.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#percentage {
+    background-image: url(./Asstes/keys/percent.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#plusminus {
+    background-image: url(./Asstes/keys/plusminus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#plus {
+    background-image: url(./Asstes/keys/plus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#minus {
+    background-image: url(./Asstes/keys/minus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#multiply {
+    background-image: url(./Asstes/keys/multiply.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#divide {
+    background-image: url(./Asstes/keys/divide.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#point {
+    background-image: url(./Asstes/keys/point.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#equal {
+    background-image: url(./Asstes/keys/equal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#zero {
+    background-image: url(./Asstes/keys/zero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#one {
+    background-image: url(./Asstes/keys/one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#two {
+    background-image: url(./Asstes/keys/two.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#three {
+    background-image: url(./Asstes/keys/three.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#four {
+    background-image: url(./Asstes/keys/four.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#five {
+    background-image: url(./Asstes/keys/five.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#six {
+    background-image: url(./Asstes/keys/six.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#seven {
+    background-image: url(./Asstes/keys/seven.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#eight {
+    background-image: url(./Asstes/keys/eight.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#nine {
+    background-image: url(./Asstes/keys/nine.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
