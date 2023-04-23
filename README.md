@@ -1,3 +1,3 @@
 # Calculator
  Calculator for the Odin Project
-[Preview](https://uxmauro.com/Calculator/) 👀
+[Preview](https://uxmauro.github.io/Calculator/) 👀
